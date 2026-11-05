@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-pageBg text-textDark antialiased font-sans;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    @apply font-serif;
+  }
+}
+
+/* Custom Luxury Scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FAF7F2;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #DEC5A2;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #C9A46A;
+}
+
+/* Card glass effect */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(201, 164, 106, 0.2);
+}
+
+.gold-border {
+  border-color: rgba(201, 164, 106, 0.35);
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #A87932 0%, #C9A46A 50%, #B07D72 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
